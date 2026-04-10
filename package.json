@@ -1,0 +1,17 @@
+{
+  "name": "aestora-desktop",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "27.0.0",
+    "electron-builder": "24.6.4"
+  },
+  "build": {
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
