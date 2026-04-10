@@ -1,6 +1,8 @@
 {
   "name": "aestora-desktop",
   "version": "1.0.0",
+  "description": "Aestora Desktop Application - Download premium After Effects leaks",
+  "author": "Aestora",
   "main": "main.js",
   "scripts": {
     "dist": "electron-builder"
@@ -10,8 +12,16 @@
     "electron-builder": "24.6.4"
   },
   "build": {
+    "appId": "com.aestora.app",
+    "productName": "Aestora",
     "win": {
       "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
     }
   }
 }
